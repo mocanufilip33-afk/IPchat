@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>SecureChat</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="sidebar">
+
+    <h2>Inbox</h2>
+
+    <input
+      id="search"
+      placeholder="Cerca utente"
+    >
+
+    <button onclick="searchUser()">
+      Cerca
+    </button>
+
+    <div id="users"></div>
+
+  </div>
+
+  <div class="chat">
+
+    <h2 id="me"></h2>
+
+    <div id="messages"></div>
+
+    <input
+      id="message"
+      placeholder="Scrivi..."
+    >
+
+    <button onclick="sendMessage()">
+      Invia
+    </button>
+
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
